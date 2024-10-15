@@ -3,3 +3,4 @@ repository for
 https://chromewebstore.google.com/detail/open-slack-in-browser-not/jkgehijlkoolgcjifalbiicaomkngakb
 
 # Release
+main merge trigger
