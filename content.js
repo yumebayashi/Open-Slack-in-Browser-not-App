@@ -21,7 +21,7 @@ const init = async () => {
             }
             throw new Error('Link not found');
         } catch (error) {
-            console.warn(`Error: ${error.message}. Attempt: ${attempt}/${maxAttempts}.`);
+            console.info(`Error: ${error.message}. Attempt: ${attempt}/${maxAttempts}.`);
             if (attempt < maxAttempts) {
                 await delay(waitTime);
             }
