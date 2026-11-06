@@ -1,7 +1,13 @@
 {
   "content_scripts": [{
     "js": ["content.js"],
-    "matches": ["http://*.slack.com/archives/*", "https://*.slack.com/archives/*", "https://*.slack.com/ssb/redirect*"]
+    "matches": [
+      "http://*.slack.com/archives/*",
+      "https://*.slack.com/archives/*",
+      "https://*.slack.com/ssb/redirect*",
+      "https://*.slack.com/app_redirect*"
+    ],
+    "run_at": "document_end"
   }],
   "description": "Open Slack in Browser, not App",
   "icons": {
@@ -11,5 +17,5 @@
   },
   "manifest_version": 3,
   "name": "Open Slack in Browser, not App",
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
